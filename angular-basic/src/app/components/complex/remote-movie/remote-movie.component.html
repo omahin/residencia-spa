@@ -1,0 +1,13 @@
+<div *ngIf="movies.length ===0 && series.length===0" class="no-results"> Nenhum resultado encontrado </div>
+<div class="list"> Filmes
+    <div *ngFor="let movie of movies" class="wrapper movies">
+        <img class="cover" [src]="movie.image">
+        <div class="title">{{ movie.name }}</div>
+    </div>
+</div>
+<div class="list"> Séries
+    <div *ngFor="let serie of series" class="wrapper series">
+        <img class="cover" [src]="serie.image">
+        <div class="title">{{ serie.name }}</div>
+    </div>
+</div>

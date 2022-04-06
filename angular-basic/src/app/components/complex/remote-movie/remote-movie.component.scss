@@ -1,0 +1,31 @@
+.no-results{
+    font-size: 22px;
+    text-align: center;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapper {
+    width: 250px;
+    margin-bottom: 15px;
+
+    &.movies{
+        border: 2px solid gray;
+    }
+
+    &.series{
+        border: 2px solid aquamarine;
+    }
+}
+
+.title {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.cover {
+    width: 100%;
+}

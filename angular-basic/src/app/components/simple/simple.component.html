@@ -1,0 +1,12 @@
+Factorial Component
+<div>
+    <app-factorial></app-factorial>
+</div>
+Movie Component
+<div>
+    <app-movie *ngFor="let movie of movieList" [movieData]="movie"></app-movie>
+</div>
+Output Component [{{ output }}]
+<div>
+    <app-output (result)="getResult($event)"></app-output>
+</div>
